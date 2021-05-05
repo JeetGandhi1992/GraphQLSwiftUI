@@ -14,6 +14,7 @@ struct CountryView: View {
     @State var showStates = false
     @State var showLanguages = false
     
+    @State private var condition: Bool = false
     
     var body: some View {
         VStack(spacing: 10) {
@@ -21,6 +22,14 @@ struct CountryView: View {
             Text("\(country.emoji)")
                 .foregroundColor(.primary)
                 .font(.system(size: 100, weight: .semibold, design: .rounded))
+                .rotation3DEffect(condition == true ? Angle(degrees: 360) : Angle(degrees: 0),
+                    axis: (x: 0.0, y: 1.0, z: 0.0)
+                    )
+                .scaleEffect(condition == true ? 1.5 : 0.5)
+                .animation(Animation
+                            .easeInOut(duration: 3)
+                            .repeatForever(autoreverses: true))
+                .onAppear { condition = true }
             Text("\(country.name) | \(country.native)")
                 .foregroundColor(.primary)
                 .font(.system(size: 35, weight: .semibold, design: .rounded))
@@ -29,9 +38,16 @@ struct CountryView: View {
             Text("Capital: \(country.capital ?? country.name)")
                 .foregroundColor(.primary)
                 .font(.system(size: 25, weight: .semibold, design: .rounded))
-            Text("Code: +\(country.phone)")
-                .foregroundColor(.primary)
-                .font(.system(size: 15, weight: .semibold, design: .rounded))
+            HStack {
+                Image(systemName: "phone.down")
+                    .rotationEffect(condition == true ? Angle(degrees: 10) : Angle(degrees: -10))
+                    .animation(Animation
+                                .easeInOut(duration: 0.3)
+                                .repeatForever(autoreverses: true))
+                Text("Code: +\(country.phone)")
+                    .foregroundColor(.primary)
+                    .font(.system(size: 15, weight: .semibold, design: .rounded))
+            }
             Form {
                 
                 Section(header: getHeaderStatesView()) {
