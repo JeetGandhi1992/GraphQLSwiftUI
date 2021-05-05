@@ -1,0 +1,33 @@
+query allContinents {
+  continents {
+    code
+    name
+    countries {
+        name
+        native
+        capital
+        currency
+        emoji
+        phone
+        languages {
+            code
+            name
+        }
+        states {
+            name
+            code
+        }
+    }
+  }
+}
+
+query SpecificCountry {
+  country(code: "IN") {
+    name
+    native
+    capital
+    currency
+    emoji
+  }
+}
+
