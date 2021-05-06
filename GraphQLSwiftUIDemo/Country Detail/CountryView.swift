@@ -48,6 +48,14 @@ struct CountryView: View {
                     .foregroundColor(.primary)
                     .font(.system(size: 15, weight: .semibold, design: .rounded))
             }
+            HStack {
+                Text("Please rate: ")
+                    .foregroundColor(.primary)
+                    .font(.system(size: 15, weight: .semibold, design: .rounded))
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(nil)
+                RatingView(rating: 0)
+            }
             Form {
                 
                 Section(header: getHeaderStatesView()) {

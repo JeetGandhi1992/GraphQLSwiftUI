@@ -15,6 +15,7 @@
 		2063CEC22642389900318D7D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063CEC12642389900318D7D /* API.swift */; };
 		2063CED126423B3800318D7D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2063CED026423B3800318D7D /* Kingfisher */; };
 		2063CEDC264240BC00318D7D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2063CEDB264240BC00318D7D /* README.md */; };
+		2063CF2A264281FB00318D7D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063CF29264281FB00318D7D /* RatingView.swift */; };
 		20860871263FB7D50084751D /* GraphQLSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20860870263FB7D50084751D /* GraphQLSwiftUIDemoApp.swift */; };
 		20860873263FB7D50084751D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20860872263FB7D50084751D /* ContentView.swift */; };
 		20860875263FB7D60084751D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20860874263FB7D60084751D /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		2035256C2641D81D00DF8F8D /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		2063CEC12642389900318D7D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = GraphQLSwiftUIDemo/API.swift; sourceTree = SOURCE_ROOT; };
 		2063CEDB264240BC00318D7D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2063CF29264281FB00318D7D /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		2086086D263FB7D50084751D /* GraphQLSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20860870263FB7D50084751D /* GraphQLSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		20860872263FB7D50084751D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Country;
 			sourceTree = "<group>";
 		};
+		2063CF2826427E4A00318D7D /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				2063CF29264281FB00318D7D /* RatingView.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
 		20860864263FB7D50084751D = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		2086086F263FB7D50084751D /* GraphQLSwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2063CF2826427E4A00318D7D /* RatingView */,
 				2063CEDB264240BC00318D7D /* README.md */,
 				201BB2B72641979D00C6C25F /* Helper */,
 				20E997A226411B5700141A21 /* Country Detail */,
@@ -414,6 +425,7 @@
 				20E9979D26404A3600141A21 /* Continent.swift in Sources */,
 				20E9976D263FBEF200141A21 /* ContinentView.swift in Sources */,
 				2035256D2641D81D00DF8F8D /* CountryListView.swift in Sources */,
+				2063CF2A264281FB00318D7D /* RatingView.swift in Sources */,
 				20E99772263FBF0A00141A21 /* ContinentViewModel.swift in Sources */,
 				20E99782263FC3B200141A21 /* NetworkingViewModel.swift in Sources */,
 				201BB2BE26419FE800C6C25F /* ContinentService.swift in Sources */,
