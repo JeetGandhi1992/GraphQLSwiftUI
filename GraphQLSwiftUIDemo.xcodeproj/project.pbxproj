@@ -23,7 +23,6 @@
 		20860883263FB7D60084751D /* GraphQLSwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20860882263FB7D60084751D /* GraphQLSwiftUIDemoTests.swift */; };
 		2086088E263FB7D60084751D /* GraphQLSwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2086088D263FB7D60084751D /* GraphQLSwiftUIDemoUITests.swift */; };
 		208608AB263FB8CA0084751D /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 208608AA263FB8CA0084751D /* Queries.graphql */; };
-		208608F6263FBE080084751D /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 208608F5263FBE080084751D /* ApolloCore */; };
 		208608F8263FBE080084751D /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 208608F7263FBE080084751D /* ApolloSQLite */; };
 		208608FA263FBE080084751D /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 208608F9263FBE080084751D /* ApolloWebSocket */; };
 		208608FC263FBE080084751D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 208608FB263FBE080084751D /* Apollo */; };
@@ -94,7 +93,6 @@
 			files = (
 				2063CED126423B3800318D7D /* Kingfisher in Frameworks */,
 				208608FE263FBE080084751D /* ApolloCodegenLib in Frameworks */,
-				208608F6263FBE080084751D /* ApolloCore in Frameworks */,
 				208608FC263FBE080084751D /* Apollo in Frameworks */,
 				208608FA263FBE080084751D /* ApolloWebSocket in Frameworks */,
 				208608F8263FBE080084751D /* ApolloSQLite in Frameworks */,
@@ -267,7 +265,6 @@
 			);
 			name = GraphQLSwiftUIDemo;
 			packageProductDependencies = (
-				208608F5263FBE080084751D /* ApolloCore */,
 				208608F7263FBE080084751D /* ApolloSQLite */,
 				208608F9263FBE080084751D /* ApolloWebSocket */,
 				208608FB263FBE080084751D /* Apollo */,
@@ -757,7 +754,7 @@
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.3.0;
+				minimumVersion = 7.2.0;
 			};
 		};
 		208608F4263FBE080084751D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
@@ -765,7 +762,7 @@
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.43.0;
+				minimumVersion = 0.51.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -775,11 +772,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2063CECF26423B3800318D7D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		208608F5263FBE080084751D /* ApolloCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 208608F4263FBE080084751D /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloCore;
 		};
 		208608F7263FBE080084751D /* ApolloSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
