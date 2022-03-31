@@ -22,13 +22,9 @@ struct CountryView: View {
             Text("\(country.emoji)")
                 .foregroundColor(.primary)
                 .font(.system(size: 100, weight: .semibold, design: .rounded))
-                .rotation3DEffect(condition == true ? Angle(degrees: 360) : Angle(degrees: 0),
-                    axis: (x: 0.0, y: 1.0, z: 0.0)
-                    )
                 .scaleEffect(condition == true ? 1.5 : 0.5)
                 .animation(Animation
-                            .easeInOut(duration: 3)
-                            .repeatForever(autoreverses: true))
+                            .easeInOut(duration: 3))
                 .onAppear { condition = true }
             Text("\(country.name) | \(country.native)")
                 .foregroundColor(.primary)
@@ -40,10 +36,6 @@ struct CountryView: View {
                 .font(.system(size: 25, weight: .semibold, design: .rounded))
             HStack {
                 Image(systemName: "phone.down")
-                    .rotationEffect(condition == true ? Angle(degrees: 10) : Angle(degrees: -10))
-                    .animation(Animation
-                                .easeInOut(duration: 0.3)
-                                .repeatForever(autoreverses: true))
                 Text("Code: +\(country.phone)")
                     .foregroundColor(.primary)
                     .font(.system(size: 15, weight: .semibold, design: .rounded))
